@@ -1,9 +1,9 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/contracts/AirDropV1.sol": {
-      "lastModificationDate": 1691739589251,
-      "contentHash": "d41d8cd98f00b204e9800998ecf8427e",
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\contracts\\AirDropV1.sol": {
+      "lastModificationDate": 1700813607015,
+      "contentHash": "58441cf76f98fe223248d85a515a6b3c",
       "sourceName": "contracts/AirDropV1.sol",
       "solcConfig": {
         "version": "0.8.19",
@@ -31,12 +31,20 @@
           }
         }
       },
-      "imports": [],
-      "versionPragmas": [],
-      "artifacts": []
+      "imports": [
+        "@dlsl/dev-modules/access-control/MerkleWhitelisted.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "./libs/TokenBalance.sol"
+      ],
+      "versionPragmas": [
+        "0.8.19"
+      ],
+      "artifacts": [
+        "AirDropV1"
+      ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/contracts/AirDropV2.sol": {
-      "lastModificationDate": 1691739589250,
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\contracts\\AirDropV2.sol": {
+      "lastModificationDate": 1700561677249,
       "contentHash": "d41d8cd98f00b204e9800998ecf8427e",
       "sourceName": "contracts/AirDropV2.sol",
       "solcConfig": {
@@ -69,8 +77,8 @@
       "versionPragmas": [],
       "artifacts": []
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/contracts/GeneralDAOVoting.sol": {
-      "lastModificationDate": 1691739589250,
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\contracts\\GeneralDAOVoting.sol": {
+      "lastModificationDate": 1700561677250,
       "contentHash": "de71dfd1d8ba60cbe794324b88a37126",
       "sourceName": "contracts/GeneralDAOVoting.sol",
       "solcConfig": {
@@ -118,186 +126,8 @@
         "GeneralDAOVoting"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@q-dev/gdk-contracts/DAO/PermissionManager.sol": {
-      "lastModificationDate": 1691739668011,
-      "contentHash": "ef2bdd21911afa9883540169feb9b250",
-      "sourceName": "@q-dev/gdk-contracts/DAO/PermissionManager.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "viaIR": false,
-          "evmVersion": "berlin",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "@openzeppelin/contracts/utils/Strings.sol",
-        "@openzeppelin/contracts/utils/Multicall.sol",
-        "@dlsl/dev-modules/contracts-registry/AbstractDependant.sol",
-        "@dlsl/dev-modules/access-control/extensions/RBACGroupable.sol",
-        "../interfaces/IDAOIntegration.sol",
-        "../interfaces/IPermissionManager.sol",
-        "./DAOVault.sol",
-        "./DAORegistry.sol",
-        "../core/Globals.sol",
-        "../libs/ArrayHelper.sol"
-      ],
-      "versionPragmas": [
-        "0.8.19"
-      ],
-      "artifacts": [
-        "PermissionManager"
-      ]
-    },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@q-dev/gdk-contracts/libs/Parameters.sol": {
-      "lastModificationDate": 1691739667939,
-      "contentHash": "04d3fac9cb6184b3289ed508d6c55f7b",
-      "sourceName": "@q-dev/gdk-contracts/libs/Parameters.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "viaIR": false,
-          "evmVersion": "berlin",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "0.8.19"
-      ],
-      "artifacts": [
-        "ParameterCodec"
-      ]
-    },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@q-dev/gdk-contracts/DAO/DAORegistry.sol": {
-      "lastModificationDate": 1691739665226,
-      "contentHash": "39a79d53b537a17a1dcc8b5255058978",
-      "sourceName": "@q-dev/gdk-contracts/DAO/DAORegistry.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "viaIR": false,
-          "evmVersion": "berlin",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "@openzeppelin/contracts/utils/Strings.sol",
-        "@dlsl/dev-modules/libs/data-structures/StringSet.sol",
-        "../metadata/DAOMetadata.sol",
-        "../interfaces/IDAORegistry.sol",
-        "../interfaces/IDAOMemberStorage.sol",
-        "../core/Globals.sol",
-        "../core/registry/RoleManagedRegistry.sol",
-        "./PermissionManager.sol",
-        "./DAOParameterStorage.sol"
-      ],
-      "versionPragmas": [
-        "0.8.19"
-      ],
-      "artifacts": [
-        "DAORegistry"
-      ]
-    },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@q-dev/gdk-contracts/core/Globals.sol": {
-      "lastModificationDate": 1691739666441,
-      "contentHash": "10dd5f16f87f14df258c61758b16604f",
-      "sourceName": "@q-dev/gdk-contracts/core/Globals.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "viaIR": false,
-          "evmVersion": "berlin",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "@openzeppelin/contracts/utils/Strings.sol",
-        "@dlsl/dev-modules/utils/Globals.sol",
-        "../interfaces/IDAOVoting.sol",
-        "../interfaces/tokens/IQRC20.sol",
-        "../libs/ArrayHelper.sol",
-        "../DAO/DAOMemberStorage.sol"
-      ],
-      "versionPragmas": [
-        "0.8.19"
-      ],
-      "artifacts": []
-    },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@q-dev/gdk-contracts/DAO/DAOParameterStorage.sol": {
-      "lastModificationDate": 1691739664925,
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@q-dev\\gdk-contracts\\DAO\\DAOParameterStorage.sol": {
+      "lastModificationDate": 1700562368676,
       "contentHash": "b18a1bc0e2dc2c118d37e9ea1a65cc34",
       "sourceName": "@q-dev/gdk-contracts/DAO/DAOParameterStorage.sol",
       "solcConfig": {
@@ -341,8 +171,87 @@
         "DAOParameterStorage"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@q-dev/gdk-contracts/DAO/DAOVault.sol": {
-      "lastModificationDate": 1691739665419,
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@dlsl\\dev-modules\\utils\\Globals.sol": {
+      "lastModificationDate": 1700562376419,
+      "contentHash": "157aa6d60ac04520cff0e7f9789a1cf3",
+      "sourceName": "@dlsl/dev-modules/utils/Globals.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": []
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@q-dev\\gdk-contracts\\core\\Globals.sol": {
+      "lastModificationDate": 1700562368678,
+      "contentHash": "10dd5f16f87f14df258c61758b16604f",
+      "sourceName": "@q-dev/gdk-contracts/core/Globals.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/Strings.sol",
+        "@dlsl/dev-modules/utils/Globals.sol",
+        "../interfaces/IDAOVoting.sol",
+        "../interfaces/tokens/IQRC20.sol",
+        "../libs/ArrayHelper.sol",
+        "../DAO/DAOMemberStorage.sol"
+      ],
+      "versionPragmas": [
+        "0.8.19"
+      ],
+      "artifacts": []
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@q-dev\\gdk-contracts\\DAO\\DAOVault.sol": {
+      "lastModificationDate": 1700562368677,
       "contentHash": "df6095ac193068ec6b27f3c0305b69bc",
       "sourceName": "@q-dev/gdk-contracts/DAO/DAOVault.sol",
       "solcConfig": {
@@ -394,8 +303,8 @@
         "DAOVault"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@q-dev/gdk-contracts/interfaces/IDAOVoting.sol": {
-      "lastModificationDate": 1691739667228,
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@q-dev\\gdk-contracts\\interfaces\\IDAOVoting.sol": {
+      "lastModificationDate": 1700562368728,
       "contentHash": "fd0591d309aec40059dc396528dcd94a",
       "sourceName": "@q-dev/gdk-contracts/interfaces/IDAOVoting.sol",
       "solcConfig": {
@@ -434,10 +343,10 @@
         "IDAOVoting"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@dlsl/dev-modules/utils/Globals.sol": {
-      "lastModificationDate": 1691739666976,
-      "contentHash": "157aa6d60ac04520cff0e7f9789a1cf3",
-      "sourceName": "@dlsl/dev-modules/utils/Globals.sol",
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@q-dev\\gdk-contracts\\libs\\Parameters.sol": {
+      "lastModificationDate": 1700562368740,
+      "contentHash": "04d3fac9cb6184b3289ed508d6c55f7b",
+      "sourceName": "@q-dev/gdk-contracts/libs/Parameters.sol",
       "solcConfig": {
         "version": "0.8.19",
         "settings": {
@@ -466,12 +375,111 @@
       },
       "imports": [],
       "versionPragmas": [
-        "^0.8.4"
+        "0.8.19"
       ],
-      "artifacts": []
+      "artifacts": [
+        "ParameterCodec"
+      ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@dlsl/dev-modules/libs/data-structures/StringSet.sol": {
-      "lastModificationDate": 1691739668910,
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@q-dev\\gdk-contracts\\DAO\\PermissionManager.sol": {
+      "lastModificationDate": 1700562368741,
+      "contentHash": "ef2bdd21911afa9883540169feb9b250",
+      "sourceName": "@q-dev/gdk-contracts/DAO/PermissionManager.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/Strings.sol",
+        "@openzeppelin/contracts/utils/Multicall.sol",
+        "@dlsl/dev-modules/contracts-registry/AbstractDependant.sol",
+        "@dlsl/dev-modules/access-control/extensions/RBACGroupable.sol",
+        "../interfaces/IDAOIntegration.sol",
+        "../interfaces/IPermissionManager.sol",
+        "./DAOVault.sol",
+        "./DAORegistry.sol",
+        "../core/Globals.sol",
+        "../libs/ArrayHelper.sol"
+      ],
+      "versionPragmas": [
+        "0.8.19"
+      ],
+      "artifacts": [
+        "PermissionManager"
+      ]
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@q-dev\\gdk-contracts\\DAO\\DAORegistry.sol": {
+      "lastModificationDate": 1700562368676,
+      "contentHash": "39a79d53b537a17a1dcc8b5255058978",
+      "sourceName": "@q-dev/gdk-contracts/DAO/DAORegistry.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/Strings.sol",
+        "@dlsl/dev-modules/libs/data-structures/StringSet.sol",
+        "../metadata/DAOMetadata.sol",
+        "../interfaces/IDAORegistry.sol",
+        "../interfaces/IDAOMemberStorage.sol",
+        "../core/Globals.sol",
+        "../core/registry/RoleManagedRegistry.sol",
+        "./PermissionManager.sol",
+        "./DAOParameterStorage.sol"
+      ],
+      "versionPragmas": [
+        "0.8.19"
+      ],
+      "artifacts": [
+        "DAORegistry"
+      ]
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@dlsl\\dev-modules\\libs\\data-structures\\StringSet.sol": {
+      "lastModificationDate": 1700562376441,
       "contentHash": "ffc148b5322fa3712124f95b9e27833e",
       "sourceName": "@dlsl/dev-modules/libs/data-structures/StringSet.sol",
       "solcConfig": {
@@ -508,8 +516,8 @@
         "StringSet"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts/utils/introspection/ERC165Checker.sol": {
-      "lastModificationDate": 1691739673545,
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts\\utils\\introspection\\ERC165Checker.sol": {
+      "lastModificationDate": 1700562369479,
       "contentHash": "0a66857c4a2223ad54b814ea56470c97",
       "sourceName": "@openzeppelin/contracts/utils/introspection/ERC165Checker.sol",
       "solcConfig": {
@@ -548,131 +556,8 @@
         "ERC165Checker"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@q-dev/gdk-contracts/interfaces/IDAOIntegration.sol": {
-      "lastModificationDate": 1691739666813,
-      "contentHash": "b19805a07ac9e2c520c73af3dbb8e15a",
-      "sourceName": "@q-dev/gdk-contracts/interfaces/IDAOIntegration.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "viaIR": false,
-          "evmVersion": "berlin",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.19"
-      ],
-      "artifacts": [
-        "IDAOIntegration"
-      ]
-    },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@q-dev/gdk-contracts/libs/ArrayHelper.sol": {
-      "lastModificationDate": 1691739663174,
-      "contentHash": "18dc723cb4269897fe7597aa043e6f85",
-      "sourceName": "@q-dev/gdk-contracts/libs/ArrayHelper.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "viaIR": false,
-          "evmVersion": "berlin",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "@dlsl/dev-modules/interfaces/access-control/IRBAC.sol",
-        "./ParameterSet.sol"
-      ],
-      "versionPragmas": [
-        "0.8.19"
-      ],
-      "artifacts": [
-        "ArrayHelper"
-      ]
-    },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@q-dev/gdk-contracts/interfaces/IPermissionManager.sol": {
-      "lastModificationDate": 1691739667527,
-      "contentHash": "4930bf262e564af10a4a5719d080040f",
-      "sourceName": "@q-dev/gdk-contracts/interfaces/IPermissionManager.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "viaIR": false,
-          "evmVersion": "berlin",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "@openzeppelin/contracts/utils/structs/EnumerableSet.sol",
-        "@dlsl/dev-modules/interfaces/access-control/IRBAC.sol",
-        "./IDAOResource.sol",
-        "../DAO/DAORegistry.sol",
-        "../DAO/DAOMemberStorage.sol"
-      ],
-      "versionPragmas": [
-        "0.8.19"
-      ],
-      "artifacts": [
-        "IPermissionManager"
-      ]
-    },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@dlsl/dev-modules/contracts-registry/AbstractDependant.sol": {
-      "lastModificationDate": 1691739663549,
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@dlsl\\dev-modules\\contracts-registry\\AbstractDependant.sol": {
+      "lastModificationDate": 1700562376409,
       "contentHash": "8816ec4d0f76b68a0dd47fe2435fab5b",
       "sourceName": "@dlsl/dev-modules/contracts-registry/AbstractDependant.sol",
       "solcConfig": {
@@ -709,8 +594,87 @@
         "AbstractDependant"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
-      "lastModificationDate": 1691739674276,
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@q-dev\\gdk-contracts\\interfaces\\IDAOParameterStorage.sol": {
+      "lastModificationDate": 1700562368724,
+      "contentHash": "d9548b4871700250d457dc122415b30d",
+      "sourceName": "@q-dev/gdk-contracts/interfaces/IDAOParameterStorage.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libs/ParameterSet.sol",
+        "./IDAOResource.sol"
+      ],
+      "versionPragmas": [
+        "0.8.19"
+      ],
+      "artifacts": [
+        "IDAOParameterStorage"
+      ]
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts\\utils\\structs\\EnumerableSet.sol": {
+      "lastModificationDate": 1700562369472,
+      "contentHash": "e029f029abc1fd2d85d54fd69086f076",
+      "sourceName": "@openzeppelin/contracts/utils/structs/EnumerableSet.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableSet"
+      ]
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts\\utils\\Strings.sol": {
+      "lastModificationDate": 1700562369568,
       "contentHash": "48686fc32a22a3754b8e63321857dd2a",
       "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
       "solcConfig": {
@@ -750,10 +714,10 @@
         "Strings"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts/utils/Multicall.sol": {
-      "lastModificationDate": 1691739674203,
-      "contentHash": "5851a44847823be35212ccba46a7ec9e",
-      "sourceName": "@openzeppelin/contracts/utils/Multicall.sol",
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@q-dev\\gdk-contracts\\metadata\\DAOMetadata.sol": {
+      "lastModificationDate": 1700562368675,
+      "contentHash": "1151d9d18f4c769e3ea9e6076d23d508",
+      "sourceName": "@q-dev/gdk-contracts/metadata/DAOMetadata.sol",
       "solcConfig": {
         "version": "0.8.19",
         "settings": {
@@ -781,140 +745,20 @@
         }
       },
       "imports": [
-        "./Address.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "Multicall"
-      ]
-    },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@dlsl/dev-modules/access-control/extensions/RBACGroupable.sol": {
-      "lastModificationDate": 1691739668697,
-      "contentHash": "e56365aaa08fc2cf6a3bb796c0f0b512",
-      "sourceName": "@dlsl/dev-modules/access-control/extensions/RBACGroupable.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "viaIR": false,
-          "evmVersion": "berlin",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "../../interfaces/access-control/extensions/IRBACGroupable.sol",
-        "../../libs/data-structures/StringSet.sol",
-        "../../libs/arrays/SetHelper.sol",
-        "../RBAC.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.4"
-      ],
-      "artifacts": [
-        "RBACGroupable"
-      ]
-    },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@q-dev/gdk-contracts/libs/TimeLocks.sol": {
-      "lastModificationDate": 1691739668311,
-      "contentHash": "01fcf70e97b3690111b9ebcf851cc50f",
-      "sourceName": "@q-dev/gdk-contracts/libs/TimeLocks.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "viaIR": false,
-          "evmVersion": "berlin",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "@dlsl/dev-modules/libs/data-structures/PriorityQueue.sol"
+        "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+        "../interfaces/metadata/IDAOMetadata.sol"
       ],
       "versionPragmas": [
         "0.8.19"
       ],
       "artifacts": [
-        "TimeLockHelper"
+        "DAOMetadata"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@q-dev/gdk-contracts/interfaces/IDAOVault.sol": {
-      "lastModificationDate": 1691739667112,
-      "contentHash": "05938bbc481f9685eb62427aefbdbab7",
-      "sourceName": "@q-dev/gdk-contracts/interfaces/IDAOVault.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "viaIR": false,
-          "evmVersion": "berlin",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "0.8.19"
-      ],
-      "artifacts": [
-        "IDAOVault"
-      ]
-    },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@q-dev/gdk-contracts/libs/TokenBalance.sol": {
-      "lastModificationDate": 1691739668354,
-      "contentHash": "8e236b0b89779cd8a2897920389b1cd8",
-      "sourceName": "@q-dev/gdk-contracts/libs/TokenBalance.sol",
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@q-dev\\gdk-contracts\\interfaces\\IDAORegistry.sol": {
+      "lastModificationDate": 1700562368725,
+      "contentHash": "90e720a6561500ecb000be5dbb42cec4",
+      "sourceName": "@q-dev/gdk-contracts/interfaces/IDAORegistry.sol",
       "solcConfig": {
         "version": "0.8.19",
         "settings": {
@@ -942,21 +786,21 @@
         }
       },
       "imports": [
-        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
-        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
-        "../core/Globals.sol"
+        "./tokens/IQRC20.sol",
+        "./IDAOVoting.sol",
+        "./IDAOResource.sol"
       ],
       "versionPragmas": [
         "0.8.19"
       ],
       "artifacts": [
-        "TokenBalance"
+        "IDAORegistry"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@q-dev/gdk-contracts/interfaces/tokens/IERC5484.sol": {
-      "lastModificationDate": 1691739667331,
-      "contentHash": "6c97b3c1695895fa0d3e975b7880617d",
-      "sourceName": "@q-dev/gdk-contracts/interfaces/tokens/IERC5484.sol",
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@q-dev\\gdk-contracts\\interfaces\\IDAOMemberStorage.sol": {
+      "lastModificationDate": 1700562368680,
+      "contentHash": "d9559c10b1cd0291f6b86eddebb7a741",
+      "sourceName": "@q-dev/gdk-contracts/interfaces/IDAOMemberStorage.sol",
       "solcConfig": {
         "version": "0.8.19",
         "settings": {
@@ -983,18 +827,21 @@
           }
         }
       },
-      "imports": [],
+      "imports": [
+        "./IDAOResource.sol",
+        "../libs/ParameterSet.sol"
+      ],
       "versionPragmas": [
         "0.8.19"
       ],
       "artifacts": [
-        "IERC5484"
+        "IDAOMemberStorage"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts/interfaces/IERC721Enumerable.sol": {
-      "lastModificationDate": 1691739674067,
-      "contentHash": "ff727125a84ba8d0dd642f6ab0632435",
-      "sourceName": "@openzeppelin/contracts/interfaces/IERC721Enumerable.sol",
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@q-dev\\gdk-contracts\\core\\registry\\RoleManagedRegistry.sol": {
+      "lastModificationDate": 1700562368745,
+      "contentHash": "456897718b8ef6540ca102004ed3cb6a",
+      "sourceName": "@q-dev/gdk-contracts/core/registry/RoleManagedRegistry.sol",
       "solcConfig": {
         "version": "0.8.19",
         "settings": {
@@ -1022,95 +869,20 @@
         }
       },
       "imports": [
-        "../token/ERC721/extensions/IERC721Enumerable.sol"
+        "@dlsl/dev-modules/contracts-registry/AbstractContractsRegistry.sol",
+        "../Globals.sol"
       ],
       "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": []
-    },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts/interfaces/IERC20.sol": {
-      "lastModificationDate": 1691739673974,
-      "contentHash": "d151fbfe7939989b9acf22797b32058b",
-      "sourceName": "@openzeppelin/contracts/interfaces/IERC20.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "viaIR": false,
-          "evmVersion": "berlin",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "../token/ERC20/IERC20.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": []
-    },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@dlsl/dev-modules/libs/data-structures/PriorityQueue.sol": {
-      "lastModificationDate": 1691739668242,
-      "contentHash": "046d239dd85262ecde91d37ba287d85c",
-      "sourceName": "@dlsl/dev-modules/libs/data-structures/PriorityQueue.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "viaIR": false,
-          "evmVersion": "berlin",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "../utils/TypeCaster.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.4"
+        "0.8.19"
       ],
       "artifacts": [
-        "PriorityQueue"
+        "RoleManagedRegistry"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol": {
-      "lastModificationDate": 1691739674148,
-      "contentHash": "b0970a564d121abf9adfff8d1a01eb16",
-      "sourceName": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@q-dev\\gdk-contracts\\interfaces\\tokens\\IQRC20.sol": {
+      "lastModificationDate": 1700562368732,
+      "contentHash": "605e1ec5dc4b1c08577c3c2576fb98a7",
+      "sourceName": "@q-dev/gdk-contracts/interfaces/tokens/IQRC20.sol",
       "solcConfig": {
         "version": "0.8.19",
         "settings": {
@@ -1138,19 +910,19 @@
         }
       },
       "imports": [
-        "../../utils/AddressUpgradeable.sol"
+        "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol"
       ],
       "versionPragmas": [
-        "^0.8.2"
+        "0.8.19"
       ],
       "artifacts": [
-        "Initializable"
+        "IQRC20"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts/utils/structs/EnumerableSet.sol": {
-      "lastModificationDate": 1691739673451,
-      "contentHash": "e029f029abc1fd2d85d54fd69086f076",
-      "sourceName": "@openzeppelin/contracts/utils/structs/EnumerableSet.sol",
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@q-dev\\gdk-contracts\\libs\\ArrayHelper.sol": {
+      "lastModificationDate": 1700562368674,
+      "contentHash": "18dc723cb4269897fe7597aa043e6f85",
+      "sourceName": "@q-dev/gdk-contracts/libs/ArrayHelper.sol",
       "solcConfig": {
         "version": "0.8.19",
         "settings": {
@@ -1177,16 +949,19 @@
           }
         }
       },
-      "imports": [],
+      "imports": [
+        "@dlsl/dev-modules/interfaces/access-control/IRBAC.sol",
+        "./ParameterSet.sol"
+      ],
       "versionPragmas": [
-        "^0.8.0"
+        "0.8.19"
       ],
       "artifacts": [
-        "EnumerableSet"
+        "ArrayHelper"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@q-dev/gdk-contracts/DAO/DAOMemberStorage.sol": {
-      "lastModificationDate": 1691739664089,
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@q-dev\\gdk-contracts\\DAO\\DAOMemberStorage.sol": {
+      "lastModificationDate": 1700562368675,
       "contentHash": "64984cb4d0315deca08a357cc787bfc2",
       "sourceName": "@q-dev/gdk-contracts/DAO/DAOMemberStorage.sol",
       "solcConfig": {
@@ -1229,10 +1004,10 @@
         "DAOMemberStorage"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@q-dev/gdk-contracts/interfaces/tokens/IQRC20.sol": {
-      "lastModificationDate": 1691739667551,
-      "contentHash": "605e1ec5dc4b1c08577c3c2576fb98a7",
-      "sourceName": "@q-dev/gdk-contracts/interfaces/tokens/IQRC20.sol",
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@q-dev\\gdk-contracts\\interfaces\\IDAOResource.sol": {
+      "lastModificationDate": 1700562368726,
+      "contentHash": "92a3e52a3ae77ddb0a30ebfd9daa8bfa",
+      "sourceName": "@q-dev/gdk-contracts/interfaces/IDAOResource.sol",
       "solcConfig": {
         "version": "0.8.19",
         "settings": {
@@ -1259,18 +1034,130 @@
           }
         }
       },
-      "imports": [
-        "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol"
-      ],
+      "imports": [],
       "versionPragmas": [
         "0.8.19"
       ],
       "artifacts": [
-        "IQRC20"
+        "IDAOResource"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@q-dev/gdk-contracts/libs/ParameterSet.sol": {
-      "lastModificationDate": 1691739667969,
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\IERC20Upgradeable.sol": {
+      "lastModificationDate": 1700562372341,
+      "contentHash": "9a9398a7dbda9d014f04d5eb0fb581fd",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Upgradeable"
+      ]
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts\\utils\\math\\Math.sol": {
+      "lastModificationDate": 1700562369553,
+      "contentHash": "fe63409d8a06818b926cf89e0ea88b1b",
+      "sourceName": "@openzeppelin/contracts/utils/math/Math.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts\\utils\\math\\SignedMath.sol": {
+      "lastModificationDate": 1700562369567,
+      "contentHash": "9488ebd4daacfee8ad04811600d7d061",
+      "sourceName": "@openzeppelin/contracts/utils/math/SignedMath.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SignedMath"
+      ]
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@q-dev\\gdk-contracts\\libs\\ParameterSet.sol": {
+      "lastModificationDate": 1700562368741,
       "contentHash": "67418212f3d1aa6a77c938e114c2a7bc",
       "sourceName": "@q-dev/gdk-contracts/libs/ParameterSet.sol",
       "solcConfig": {
@@ -1309,8 +1196,8 @@
         "ParameterSet"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@dlsl/dev-modules/interfaces/access-control/IRBAC.sol": {
-      "lastModificationDate": 1691739667588,
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@dlsl\\dev-modules\\interfaces\\access-control\\IRBAC.sol": {
+      "lastModificationDate": 1700562376425,
       "contentHash": "481b82195e5c15373fa1d9b3e53aaa9c",
       "sourceName": "@dlsl/dev-modules/interfaces/access-control/IRBAC.sol",
       "solcConfig": {
@@ -1349,10 +1236,50 @@
         "IRBAC"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@q-dev/gdk-contracts/interfaces/IDAOResource.sol": {
-      "lastModificationDate": 1691739666991,
-      "contentHash": "92a3e52a3ae77ddb0a30ebfd9daa8bfa",
-      "sourceName": "@q-dev/gdk-contracts/interfaces/IDAOResource.sol",
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts\\utils\\Multicall.sol": {
+      "lastModificationDate": 1700562369555,
+      "contentHash": "5851a44847823be35212ccba46a7ec9e",
+      "sourceName": "@openzeppelin/contracts/utils/Multicall.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Multicall"
+      ]
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@q-dev\\gdk-contracts\\interfaces\\IDAOIntegration.sol": {
+      "lastModificationDate": 1700562368680,
+      "contentHash": "b19805a07ac9e2c520c73af3dbb8e15a",
+      "sourceName": "@q-dev/gdk-contracts/interfaces/IDAOIntegration.sol",
       "solcConfig": {
         "version": "0.8.19",
         "settings": {
@@ -1381,16 +1308,16 @@
       },
       "imports": [],
       "versionPragmas": [
-        "0.8.19"
+        "^0.8.19"
       ],
       "artifacts": [
-        "IDAOResource"
+        "IDAOIntegration"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@q-dev/gdk-contracts/interfaces/IDAOMemberStorage.sol": {
-      "lastModificationDate": 1691739666837,
-      "contentHash": "d9559c10b1cd0291f6b86eddebb7a741",
-      "sourceName": "@q-dev/gdk-contracts/interfaces/IDAOMemberStorage.sol",
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@q-dev\\gdk-contracts\\interfaces\\IPermissionManager.sol": {
+      "lastModificationDate": 1700562368732,
+      "contentHash": "4930bf262e564af10a4a5719d080040f",
+      "sourceName": "@q-dev/gdk-contracts/interfaces/IPermissionManager.sol",
       "solcConfig": {
         "version": "0.8.19",
         "settings": {
@@ -1418,20 +1345,23 @@
         }
       },
       "imports": [
+        "@openzeppelin/contracts/utils/structs/EnumerableSet.sol",
+        "@dlsl/dev-modules/interfaces/access-control/IRBAC.sol",
         "./IDAOResource.sol",
-        "../libs/ParameterSet.sol"
+        "../DAO/DAORegistry.sol",
+        "../DAO/DAOMemberStorage.sol"
       ],
       "versionPragmas": [
         "0.8.19"
       ],
       "artifacts": [
-        "IDAOMemberStorage"
+        "IPermissionManager"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@q-dev/gdk-contracts/metadata/DAOMetadata.sol": {
-      "lastModificationDate": 1691739664381,
-      "contentHash": "1151d9d18f4c769e3ea9e6076d23d508",
-      "sourceName": "@q-dev/gdk-contracts/metadata/DAOMetadata.sol",
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@dlsl\\dev-modules\\access-control\\extensions\\RBACGroupable.sol": {
+      "lastModificationDate": 1700562376437,
+      "contentHash": "e56365aaa08fc2cf6a3bb796c0f0b512",
+      "sourceName": "@dlsl/dev-modules/access-control/extensions/RBACGroupable.sol",
       "solcConfig": {
         "version": "0.8.19",
         "settings": {
@@ -1459,540 +1389,22 @@
         }
       },
       "imports": [
-        "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
-        "../interfaces/metadata/IDAOMetadata.sol"
-      ],
-      "versionPragmas": [
-        "0.8.19"
-      ],
-      "artifacts": [
-        "DAOMetadata"
-      ]
-    },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@q-dev/gdk-contracts/interfaces/IDAORegistry.sol": {
-      "lastModificationDate": 1691739666962,
-      "contentHash": "90e720a6561500ecb000be5dbb42cec4",
-      "sourceName": "@q-dev/gdk-contracts/interfaces/IDAORegistry.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "viaIR": false,
-          "evmVersion": "berlin",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "./tokens/IQRC20.sol",
-        "./IDAOVoting.sol",
-        "./IDAOResource.sol"
-      ],
-      "versionPragmas": [
-        "0.8.19"
-      ],
-      "artifacts": [
-        "IDAORegistry"
-      ]
-    },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@q-dev/gdk-contracts/core/registry/RoleManagedRegistry.sol": {
-      "lastModificationDate": 1691739668253,
-      "contentHash": "456897718b8ef6540ca102004ed3cb6a",
-      "sourceName": "@q-dev/gdk-contracts/core/registry/RoleManagedRegistry.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "viaIR": false,
-          "evmVersion": "berlin",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "@dlsl/dev-modules/contracts-registry/AbstractContractsRegistry.sol",
-        "../Globals.sol"
-      ],
-      "versionPragmas": [
-        "0.8.19"
-      ],
-      "artifacts": [
-        "RoleManagedRegistry"
-      ]
-    },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@q-dev/gdk-contracts/interfaces/IDAOParameterStorage.sol": {
-      "lastModificationDate": 1691739666929,
-      "contentHash": "d9548b4871700250d457dc122415b30d",
-      "sourceName": "@q-dev/gdk-contracts/interfaces/IDAOParameterStorage.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "viaIR": false,
-          "evmVersion": "berlin",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "../libs/ParameterSet.sol",
-        "./IDAOResource.sol"
-      ],
-      "versionPragmas": [
-        "0.8.19"
-      ],
-      "artifacts": [
-        "IDAOParameterStorage"
-      ]
-    },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol": {
-      "lastModificationDate": 1691739674017,
-      "contentHash": "9a9398a7dbda9d014f04d5eb0fb581fd",
-      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "viaIR": false,
-          "evmVersion": "berlin",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "IERC20Upgradeable"
-      ]
-    },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts/utils/math/SignedMath.sol": {
-      "lastModificationDate": 1691739674266,
-      "contentHash": "9488ebd4daacfee8ad04811600d7d061",
-      "sourceName": "@openzeppelin/contracts/utils/math/SignedMath.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "viaIR": false,
-          "evmVersion": "berlin",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "SignedMath"
-      ]
-    },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts/utils/math/Math.sol": {
-      "lastModificationDate": 1691739674170,
-      "contentHash": "fe63409d8a06818b926cf89e0ea88b1b",
-      "sourceName": "@openzeppelin/contracts/utils/math/Math.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "viaIR": false,
-          "evmVersion": "berlin",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "Math"
-      ]
-    },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@q-dev/gdk-contracts/interfaces/metadata/IDAOMetadata.sol": {
-      "lastModificationDate": 1691739666894,
-      "contentHash": "3bf508f2b2cbed2ea7d3aa665d588cf3",
-      "sourceName": "@q-dev/gdk-contracts/interfaces/metadata/IDAOMetadata.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "viaIR": false,
-          "evmVersion": "berlin",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "./IERC4824.sol"
-      ],
-      "versionPragmas": [
-        "0.8.19"
-      ],
-      "artifacts": [
-        "IDAOMetadata"
-      ]
-    },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol": {
-      "lastModificationDate": 1691739673214,
-      "contentHash": "c30c805386fda8a42ff515da963d3a95",
-      "sourceName": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "viaIR": false,
-          "evmVersion": "berlin",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.1"
-      ],
-      "artifacts": [
-        "AddressUpgradeable"
-      ]
-    },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@q-dev/gdk-contracts/interfaces/metadata/IERC4824.sol": {
-      "lastModificationDate": 1691739667277,
-      "contentHash": "e0d4355e5a816996a94db396ebfcdb8b",
-      "sourceName": "@q-dev/gdk-contracts/interfaces/metadata/IERC4824.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "viaIR": false,
-          "evmVersion": "berlin",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "0.8.19"
-      ],
-      "artifacts": [
-        "EIP4824"
-      ]
-    },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@dlsl/dev-modules/contracts-registry/AbstractContractsRegistry.sol": {
-      "lastModificationDate": 1691739663212,
-      "contentHash": "30fd0c1fd164ef5600edbb48a32e0d9d",
-      "sourceName": "@dlsl/dev-modules/contracts-registry/AbstractContractsRegistry.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "viaIR": false,
-          "evmVersion": "berlin",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
-        "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol",
-        "./proxy/ProxyUpgrader.sol",
-        "./AbstractDependant.sol"
+        "../../interfaces/access-control/extensions/IRBACGroupable.sol",
+        "../../libs/data-structures/StringSet.sol",
+        "../../libs/arrays/SetHelper.sol",
+        "../RBAC.sol"
       ],
       "versionPragmas": [
         "^0.8.4"
       ],
       "artifacts": [
-        "AbstractContractsRegistry"
+        "RBACGroupable"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol": {
-      "lastModificationDate": 1691739674287,
-      "contentHash": "1286aa8d056c7120d1a2da252e310d2f",
-      "sourceName": "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "viaIR": false,
-          "evmVersion": "berlin",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "../ERC1967/ERC1967Proxy.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "ITransparentUpgradeableProxy",
-        "TransparentUpgradeableProxy"
-      ]
-    },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@dlsl/dev-modules/contracts-registry/proxy/ProxyUpgrader.sol": {
-      "lastModificationDate": 1691739668374,
-      "contentHash": "6c11c7fb4433bbd72bca66aa25b31a72",
-      "sourceName": "@dlsl/dev-modules/contracts-registry/proxy/ProxyUpgrader.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "viaIR": false,
-          "evmVersion": "berlin",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol",
-        "@openzeppelin/contracts/utils/Address.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.4"
-      ],
-      "artifacts": [
-        "ProxyUpgrader"
-      ]
-    },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol": {
-      "lastModificationDate": 1691739673563,
-      "contentHash": "3fc3c7c0a2956f36e766691bb9473b06",
-      "sourceName": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "viaIR": false,
-          "evmVersion": "berlin",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "../Proxy.sol",
-        "./ERC1967Upgrade.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "ERC1967Proxy"
-      ]
-    },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts/proxy/Proxy.sol": {
-      "lastModificationDate": 1691739674212,
-      "contentHash": "40b3d81a836d50ff47e03893dcaaf204",
-      "sourceName": "@openzeppelin/contracts/proxy/Proxy.sol",
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@q-dev\\gdk-contracts\\interfaces\\IDAOVault.sol": {
+      "lastModificationDate": 1700562368726,
+      "contentHash": "05938bbc481f9685eb62427aefbdbab7",
+      "sourceName": "@q-dev/gdk-contracts/interfaces/IDAOVault.sol",
       "solcConfig": {
         "version": "0.8.19",
         "settings": {
@@ -2021,16 +1433,16 @@
       },
       "imports": [],
       "versionPragmas": [
-        "^0.8.0"
+        "0.8.19"
       ],
       "artifacts": [
-        "Proxy"
+        "IDAOVault"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol": {
-      "lastModificationDate": 1691739673571,
-      "contentHash": "a127706394bead18392601a20d44867a",
-      "sourceName": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol",
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts\\interfaces\\IERC20.sol": {
+      "lastModificationDate": 1700562369524,
+      "contentHash": "d151fbfe7939989b9acf22797b32058b",
+      "sourceName": "@openzeppelin/contracts/interfaces/IERC20.sol",
       "solcConfig": {
         "version": "0.8.19",
         "settings": {
@@ -2058,23 +1470,217 @@
         }
       },
       "imports": [
-        "../beacon/IBeacon.sol",
-        "../../interfaces/IERC1967.sol",
-        "../../interfaces/draft-IERC1822.sol",
-        "../../utils/Address.sol",
-        "../../utils/StorageSlot.sol"
+        "../token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts\\interfaces\\IERC721Enumerable.sol": {
+      "lastModificationDate": 1700562369533,
+      "contentHash": "ff727125a84ba8d0dd642f6ab0632435",
+      "sourceName": "@openzeppelin/contracts/interfaces/IERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC721/extensions/IERC721Enumerable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@q-dev\\gdk-contracts\\libs\\TokenBalance.sol": {
+      "lastModificationDate": 1700562368747,
+      "contentHash": "8e236b0b89779cd8a2897920389b1cd8",
+      "sourceName": "@q-dev/gdk-contracts/libs/TokenBalance.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+        "../core/Globals.sol"
+      ],
+      "versionPragmas": [
+        "0.8.19"
+      ],
+      "artifacts": [
+        "TokenBalance"
+      ]
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@q-dev\\gdk-contracts\\libs\\TimeLocks.sol": {
+      "lastModificationDate": 1700562368746,
+      "contentHash": "01fcf70e97b3690111b9ebcf851cc50f",
+      "sourceName": "@q-dev/gdk-contracts/libs/TimeLocks.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@dlsl/dev-modules/libs/data-structures/PriorityQueue.sol"
+      ],
+      "versionPragmas": [
+        "0.8.19"
+      ],
+      "artifacts": [
+        "TimeLockHelper"
+      ]
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@dlsl\\dev-modules\\libs\\data-structures\\PriorityQueue.sol": {
+      "lastModificationDate": 1700562376433,
+      "contentHash": "046d239dd85262ecde91d37ba287d85c",
+      "sourceName": "@dlsl/dev-modules/libs/data-structures/PriorityQueue.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/TypeCaster.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "PriorityQueue"
+      ]
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol": {
+      "lastModificationDate": 1700562372356,
+      "contentHash": "b0970a564d121abf9adfff8d1a01eb16",
+      "sourceName": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/AddressUpgradeable.sol"
       ],
       "versionPragmas": [
         "^0.8.2"
       ],
       "artifacts": [
-        "ERC1967Upgrade"
+        "Initializable"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts/utils/Address.sol": {
-      "lastModificationDate": 1691739673248,
-      "contentHash": "211ffd288c1588ba8c10eae668ca3c66",
-      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@q-dev\\gdk-contracts\\interfaces\\tokens\\IERC5484.sol": {
+      "lastModificationDate": 1700562368730,
+      "contentHash": "6c97b3c1695895fa0d3e975b7880617d",
+      "sourceName": "@q-dev/gdk-contracts/interfaces/tokens/IERC5484.sol",
       "solcConfig": {
         "version": "0.8.19",
         "settings": {
@@ -2103,166 +1709,14 @@
       },
       "imports": [],
       "versionPragmas": [
-        "^0.8.1"
+        "0.8.19"
       ],
       "artifacts": [
-        "Address"
+        "IERC5484"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts/proxy/beacon/IBeacon.sol": {
-      "lastModificationDate": 1691739673889,
-      "contentHash": "b6bd23bf19e90b771337037706470933",
-      "sourceName": "@openzeppelin/contracts/proxy/beacon/IBeacon.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "viaIR": false,
-          "evmVersion": "berlin",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "IBeacon"
-      ]
-    },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts/interfaces/IERC1967.sol": {
-      "lastModificationDate": 1691739673973,
-      "contentHash": "d0d060231a45da7a1eecbb5cd286fa40",
-      "sourceName": "@openzeppelin/contracts/interfaces/IERC1967.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "viaIR": false,
-          "evmVersion": "berlin",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "IERC1967"
-      ]
-    },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts/utils/StorageSlot.sol": {
-      "lastModificationDate": 1691739674272,
-      "contentHash": "682f7dd1f2e1147c8390e7575deceb2d",
-      "sourceName": "@openzeppelin/contracts/utils/StorageSlot.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "viaIR": false,
-          "evmVersion": "berlin",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "StorageSlot"
-      ]
-    },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts/interfaces/draft-IERC1822.sol": {
-      "lastModificationDate": 1691739673395,
-      "contentHash": "2858d98e74e67987ec81b39605230b74",
-      "sourceName": "@openzeppelin/contracts/interfaces/draft-IERC1822.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "viaIR": false,
-          "evmVersion": "berlin",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "IERC1822Proxiable"
-      ]
-    },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol": {
-      "lastModificationDate": 1691739673938,
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts\\utils\\introspection\\IERC165.sol": {
+      "lastModificationDate": 1700562369520,
       "contentHash": "03e6768535ac4da0e9756f1d8a4a018a",
       "sourceName": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
       "solcConfig": {
@@ -2299,46 +1753,8 @@
         "IERC165"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@dlsl/dev-modules/libs/utils/TypeCaster.sol": {
-      "lastModificationDate": 1691739668956,
-      "contentHash": "027083ec476e13c114046d658b8fe042",
-      "sourceName": "@dlsl/dev-modules/libs/utils/TypeCaster.sol",
-      "solcConfig": {
-        "version": "0.8.19",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "viaIR": false,
-          "evmVersion": "berlin",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.4"
-      ],
-      "artifacts": [
-        "TypeCaster"
-      ]
-    },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
-      "lastModificationDate": 1691739673977,
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\IERC20.sol": {
+      "lastModificationDate": 1700562369525,
       "contentHash": "df36f7051335cd1e748b1b6463b7fdd3",
       "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
       "solcConfig": {
@@ -2375,8 +1791,88 @@
         "IERC20"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol": {
-      "lastModificationDate": 1691739674238,
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\extensions\\IERC721Enumerable.sol": {
+      "lastModificationDate": 1700562369535,
+      "contentHash": "f4dd06783f321aa26179bc2b6e361c29",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Enumerable"
+      ]
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\IERC721.sol": {
+      "lastModificationDate": 1700562369532,
+      "contentHash": "48de4c9a3a4ae5ef66a2aa620843413f",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721"
+      ]
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\utils\\SafeERC20.sol": {
+      "lastModificationDate": 1700562369564,
       "contentHash": "a159c68235d1d18f16dd0a57a000daea",
       "sourceName": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
       "solcConfig": {
@@ -2417,8 +1913,46 @@
         "SafeERC20"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol": {
-      "lastModificationDate": 1691739673994,
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts\\utils\\Address.sol": {
+      "lastModificationDate": 1700562369454,
+      "contentHash": "211ffd288c1588ba8c10eae668ca3c66",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.1"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\extensions\\IERC20Permit.sol": {
+      "lastModificationDate": 1700562369526,
       "contentHash": "aa849939a4ae83a4dcb2dca9b3e9e707",
       "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol",
       "solcConfig": {
@@ -2455,10 +1989,86 @@
         "IERC20Permit"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol": {
-      "lastModificationDate": 1691739674069,
-      "contentHash": "f4dd06783f321aa26179bc2b6e361c29",
-      "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol",
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@dlsl\\dev-modules\\libs\\utils\\TypeCaster.sol": {
+      "lastModificationDate": 1700562376442,
+      "contentHash": "027083ec476e13c114046d658b8fe042",
+      "sourceName": "@dlsl/dev-modules/libs/utils/TypeCaster.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "TypeCaster"
+      ]
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts-upgradeable\\utils\\AddressUpgradeable.sol": {
+      "lastModificationDate": 1700562372271,
+      "contentHash": "c30c805386fda8a42ff515da963d3a95",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.1"
+      ],
+      "artifacts": [
+        "AddressUpgradeable"
+      ]
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@dlsl\\dev-modules\\libs\\arrays\\SetHelper.sol": {
+      "lastModificationDate": 1700562376441,
+      "contentHash": "78896772f4f80e361b8f39c04e75d1c0",
+      "sourceName": "@dlsl/dev-modules/libs/arrays/SetHelper.sol",
       "solcConfig": {
         "version": "0.8.19",
         "settings": {
@@ -2486,19 +2096,20 @@
         }
       },
       "imports": [
-        "../IERC721.sol"
+        "@openzeppelin/contracts/utils/structs/EnumerableSet.sol",
+        "../data-structures/StringSet.sol"
       ],
       "versionPragmas": [
-        "^0.8.0"
+        "^0.8.4"
       ],
       "artifacts": [
-        "IERC721Enumerable"
+        "SetHelper"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol": {
-      "lastModificationDate": 1691739674065,
-      "contentHash": "48de4c9a3a4ae5ef66a2aa620843413f",
-      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@dlsl\\dev-modules\\interfaces\\access-control\\extensions\\IRBACGroupable.sol": {
+      "lastModificationDate": 1700562376426,
+      "contentHash": "f3a42142fbe0261543975d962c231302",
+      "sourceName": "@dlsl/dev-modules/interfaces/access-control/extensions/IRBACGroupable.sol",
       "solcConfig": {
         "version": "0.8.19",
         "settings": {
@@ -2525,18 +2136,16 @@
           }
         }
       },
-      "imports": [
-        "../../utils/introspection/IERC165.sol"
-      ],
+      "imports": [],
       "versionPragmas": [
-        "^0.8.0"
+        "^0.8.4"
       ],
       "artifacts": [
-        "IERC721"
+        "IRBACGroupable"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@dlsl/dev-modules/access-control/RBAC.sol": {
-      "lastModificationDate": 1691739668633,
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@dlsl\\dev-modules\\access-control\\RBAC.sol": {
+      "lastModificationDate": 1700562376436,
       "contentHash": "6656f1f59141071d8c20e634d46df5ae",
       "sourceName": "@dlsl/dev-modules/access-control/RBAC.sol",
       "solcConfig": {
@@ -2579,10 +2188,10 @@
         "RBAC"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@dlsl/dev-modules/libs/arrays/SetHelper.sol": {
-      "lastModificationDate": 1691739668868,
-      "contentHash": "78896772f4f80e361b8f39c04e75d1c0",
-      "sourceName": "@dlsl/dev-modules/libs/arrays/SetHelper.sol",
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@q-dev\\gdk-contracts\\interfaces\\metadata\\IDAOMetadata.sol": {
+      "lastModificationDate": 1700562368681,
+      "contentHash": "3bf508f2b2cbed2ea7d3aa665d588cf3",
+      "sourceName": "@q-dev/gdk-contracts/interfaces/metadata/IDAOMetadata.sol",
       "solcConfig": {
         "version": "0.8.19",
         "settings": {
@@ -2610,20 +2219,19 @@
         }
       },
       "imports": [
-        "@openzeppelin/contracts/utils/structs/EnumerableSet.sol",
-        "../data-structures/StringSet.sol"
+        "./IERC4824.sol"
       ],
       "versionPragmas": [
-        "^0.8.4"
+        "0.8.19"
       ],
       "artifacts": [
-        "SetHelper"
+        "IDAOMetadata"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@dlsl/dev-modules/interfaces/access-control/extensions/IRBACGroupable.sol": {
-      "lastModificationDate": 1691739667708,
-      "contentHash": "f3a42142fbe0261543975d962c231302",
-      "sourceName": "@dlsl/dev-modules/interfaces/access-control/extensions/IRBACGroupable.sol",
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@q-dev\\gdk-contracts\\interfaces\\metadata\\IERC4824.sol": {
+      "lastModificationDate": 1700562368729,
+      "contentHash": "e0d4355e5a816996a94db396ebfcdb8b",
+      "sourceName": "@q-dev/gdk-contracts/interfaces/metadata/IERC4824.sol",
       "solcConfig": {
         "version": "0.8.19",
         "settings": {
@@ -2652,14 +2260,414 @@
       },
       "imports": [],
       "versionPragmas": [
+        "0.8.19"
+      ],
+      "artifacts": [
+        "EIP4824"
+      ]
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@dlsl\\dev-modules\\contracts-registry\\AbstractContractsRegistry.sol": {
+      "lastModificationDate": 1700562376409,
+      "contentHash": "30fd0c1fd164ef5600edbb48a32e0d9d",
+      "sourceName": "@dlsl/dev-modules/contracts-registry/AbstractContractsRegistry.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+        "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol",
+        "./proxy/ProxyUpgrader.sol",
+        "./AbstractDependant.sol"
+      ],
+      "versionPragmas": [
         "^0.8.4"
       ],
       "artifacts": [
-        "IRBACGroupable"
+        "AbstractContractsRegistry"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/contracts/libs/TokenBalance.sol": {
-      "lastModificationDate": 1691739589252,
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@dlsl\\dev-modules\\contracts-registry\\proxy\\ProxyUpgrader.sol": {
+      "lastModificationDate": 1700562376435,
+      "contentHash": "6c11c7fb4433bbd72bca66aa25b31a72",
+      "sourceName": "@dlsl/dev-modules/contracts-registry/proxy/ProxyUpgrader.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol",
+        "@openzeppelin/contracts/utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "ProxyUpgrader"
+      ]
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts\\proxy\\transparent\\TransparentUpgradeableProxy.sol": {
+      "lastModificationDate": 1700562369571,
+      "contentHash": "1286aa8d056c7120d1a2da252e310d2f",
+      "sourceName": "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC1967/ERC1967Proxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ITransparentUpgradeableProxy",
+        "TransparentUpgradeableProxy"
+      ]
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts\\proxy\\ERC1967\\ERC1967Proxy.sol": {
+      "lastModificationDate": 1700562369482,
+      "contentHash": "3fc3c7c0a2956f36e766691bb9473b06",
+      "sourceName": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Proxy.sol",
+        "./ERC1967Upgrade.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1967Proxy"
+      ]
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts\\proxy\\Proxy.sol": {
+      "lastModificationDate": 1700562369557,
+      "contentHash": "40b3d81a836d50ff47e03893dcaaf204",
+      "sourceName": "@openzeppelin/contracts/proxy/Proxy.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Proxy"
+      ]
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts\\proxy\\ERC1967\\ERC1967Upgrade.sol": {
+      "lastModificationDate": 1700562369482,
+      "contentHash": "a127706394bead18392601a20d44867a",
+      "sourceName": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Upgrade.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../beacon/IBeacon.sol",
+        "../../interfaces/IERC1967.sol",
+        "../../interfaces/draft-IERC1822.sol",
+        "../../utils/Address.sol",
+        "../../utils/StorageSlot.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.2"
+      ],
+      "artifacts": [
+        "ERC1967Upgrade"
+      ]
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts\\interfaces\\IERC1967.sol": {
+      "lastModificationDate": 1700562369524,
+      "contentHash": "d0d060231a45da7a1eecbb5cd286fa40",
+      "sourceName": "@openzeppelin/contracts/interfaces/IERC1967.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1967"
+      ]
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts\\interfaces\\draft-IERC1822.sol": {
+      "lastModificationDate": 1700562369467,
+      "contentHash": "2858d98e74e67987ec81b39605230b74",
+      "sourceName": "@openzeppelin/contracts/interfaces/draft-IERC1822.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1822Proxiable"
+      ]
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts\\proxy\\beacon\\IBeacon.sol": {
+      "lastModificationDate": 1700562369514,
+      "contentHash": "b6bd23bf19e90b771337037706470933",
+      "sourceName": "@openzeppelin/contracts/proxy/beacon/IBeacon.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IBeacon"
+      ]
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts\\utils\\StorageSlot.sol": {
+      "lastModificationDate": 1700562369568,
+      "contentHash": "682f7dd1f2e1147c8390e7575deceb2d",
+      "sourceName": "@openzeppelin/contracts/utils/StorageSlot.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "StorageSlot"
+      ]
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\contracts\\libs\\TokenBalance.sol": {
+      "lastModificationDate": 1700561677251,
       "contentHash": "92d186493e844278bd243df3cf44c989",
       "sourceName": "contracts/libs/TokenBalance.sol",
       "solcConfig": {
@@ -2700,8 +2708,8 @@
         "TokenBalance"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/contracts/libs/ACampaignAirDrop.sol": {
-      "lastModificationDate": 1691739589251,
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\contracts\\libs\\ACampaignAirDrop.sol": {
+      "lastModificationDate": 1700561677251,
       "contentHash": "9664a3d5e8b900f528b506814ab5df47",
       "sourceName": "contracts/libs/ACampaignAirDrop.sol",
       "solcConfig": {
@@ -2741,8 +2749,8 @@
         "ACampaignAirDrop"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts/utils/cryptography/MerkleProof.sol": {
-      "lastModificationDate": 1691739674182,
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts\\utils\\cryptography\\MerkleProof.sol": {
+      "lastModificationDate": 1700562369553,
       "contentHash": "1ccd3348ad628f1330ce36eb6a30618d",
       "sourceName": "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol",
       "solcConfig": {
@@ -2779,8 +2787,8 @@
         "MerkleProof"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/IERC20MetadataUpgradeable.sol": {
-      "lastModificationDate": 1691739673992,
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\extensions\\IERC20MetadataUpgradeable.sol": {
+      "lastModificationDate": 1700562372340,
       "contentHash": "9efcd5467a7f0bf533910ee8a267adb2",
       "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/IERC20MetadataUpgradeable.sol",
       "solcConfig": {
@@ -2819,8 +2827,8 @@
         "IERC20MetadataUpgradeable"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol": {
-      "lastModificationDate": 1691739673642,
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts-upgradeable\\token\\ERC20\\ERC20Upgradeable.sol": {
+      "lastModificationDate": 1700562372301,
       "contentHash": "569edd57f8c6c7f5f750a3da1ed9c4c7",
       "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol",
       "solcConfig": {
@@ -2862,8 +2870,8 @@
         "ERC20Upgradeable"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol": {
-      "lastModificationDate": 1691739673262,
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol": {
+      "lastModificationDate": 1700562372276,
       "contentHash": "6200b84950eb05b4a92a39fd1d6e0f9b",
       "sourceName": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol",
       "solcConfig": {
@@ -2902,8 +2910,8 @@
         "ContextUpgradeable"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol": {
-      "lastModificationDate": 1691739674207,
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol": {
+      "lastModificationDate": 1700562372364,
       "contentHash": "db24b956904575cc79d02867ec03263c",
       "sourceName": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
       "solcConfig": {
@@ -2943,8 +2951,8 @@
         "OwnableUpgradeable"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/contracts/QRC20.sol": {
-      "lastModificationDate": 1691739589250,
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\contracts\\QRC20.sol": {
+      "lastModificationDate": 1700563806818,
       "contentHash": "36a3493f513fdd214f1007e5023c0f87",
       "sourceName": "contracts/QRC20.sol",
       "solcConfig": {
@@ -2986,8 +2994,8 @@
         "QRC20"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@q-dev/gdk-contracts/metadata/ContractMetadata.sol": {
-      "lastModificationDate": 1691739663662,
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@q-dev\\gdk-contracts\\metadata\\ContractMetadata.sol": {
+      "lastModificationDate": 1700562368674,
       "contentHash": "222588aa665adb2001c541b956ee7804",
       "sourceName": "@q-dev/gdk-contracts/metadata/ContractMetadata.sol",
       "solcConfig": {
@@ -3027,8 +3035,8 @@
         "ContractMetadata"
       ]
     },
-    "/Users/mac/Downloads/Q_DAO_boilerplate 2/node_modules/@q-dev/gdk-contracts/interfaces/metadata/IContractMetadata.sol": {
-      "lastModificationDate": 1691739666643,
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@q-dev\\gdk-contracts\\interfaces\\metadata\\IContractMetadata.sol": {
+      "lastModificationDate": 1700562368679,
       "contentHash": "a6da03bf8cbf06850df994d3f5deb02b",
       "sourceName": "@q-dev/gdk-contracts/interfaces/metadata/IContractMetadata.sol",
       "solcConfig": {
@@ -3063,6 +3071,124 @@
       ],
       "artifacts": [
         "IContractMetadata"
+      ]
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@dlsl\\dev-modules\\access-control\\MerkleWhitelisted.sol": {
+      "lastModificationDate": 1700562376428,
+      "contentHash": "51527fe02b4b76d8385b18634619fb44",
+      "sourceName": "@dlsl/dev-modules/access-control/MerkleWhitelisted.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "MerkleWhitelisted"
+      ]
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts\\access\\Ownable.sol": {
+      "lastModificationDate": 1700562369555,
+      "contentHash": "5a20b2cad87ddb61c7a3a6af21289e28",
+      "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts\\utils\\Context.sol": {
+      "lastModificationDate": 1700562369457,
+      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
       ]
     }
   }
