@@ -44,8 +44,8 @@
       ]
     },
     "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\contracts\\AirDropV2.sol": {
-      "lastModificationDate": 1700561677249,
-      "contentHash": "d41d8cd98f00b204e9800998ecf8427e",
+      "lastModificationDate": 1700817208068,
+      "contentHash": "f718fcca335d9b1ec76c7d8d5dbced05",
       "sourceName": "contracts/AirDropV2.sol",
       "solcConfig": {
         "version": "0.8.19",
@@ -73,9 +73,17 @@
           }
         }
       },
-      "imports": [],
-      "versionPragmas": [],
-      "artifacts": []
+      "imports": [
+        "@openzeppelin/contracts/proxy/utils/Initializable.sol",
+        "@q-dev/gdk-contracts/interfaces/IDAOResource.sol",
+        "./libs/ACampaignAirDrop.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.19"
+      ],
+      "artifacts": [
+        "AirDropV2"
+      ]
     },
     "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\contracts\\GeneralDAOVoting.sol": {
       "lastModificationDate": 1700561677250,
@@ -3189,6 +3197,46 @@
       ],
       "artifacts": [
         "Context"
+      ]
+    },
+    "C:\\Users\\Pradeep Joshi\\Q-boilerplate-code\\node_modules\\@openzeppelin\\contracts\\proxy\\utils\\Initializable.sol": {
+      "lastModificationDate": 1700562369548,
+      "contentHash": "5efeb93e6b1c83c754da2846c2da51a7",
+      "sourceName": "@openzeppelin/contracts/proxy/utils/Initializable.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": false,
+          "evmVersion": "berlin",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.2"
+      ],
+      "artifacts": [
+        "Initializable"
       ]
     }
   }
